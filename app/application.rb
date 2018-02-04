@@ -11,7 +11,7 @@ class Application
       resp.write "You Win"
     else
       resp.write "You Lose"
-      call
+      self.call(env)
     end
 
     resp.finish
